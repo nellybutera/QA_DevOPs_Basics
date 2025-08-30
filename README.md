@@ -1,8 +1,8 @@
-# QA & DevOps Practice Project
+## QA & DevOps Practice Project
 
 This is a **simple practice project** I created to strengthen my **QA and DevOps skills**. The goal was to learn how to write tests in Python and integrate them into a CI/CD workflow using GitHub Actions.  
 
-## Project Overview
+### Project Overview
 
 - A **basic calculator program** with two functions I wrote:  
   - **Addition** (`add`)  
@@ -10,7 +10,7 @@ This is a **simple practice project** I created to strengthen my **QA and DevOps
 - I created automated **tests using `pytest`** to make sure the calculator works correctly.  
 - Added **CI/CD integration** with GitHub Actions, including generating a test report.
 
-## How I Built & Tested It
+### How I Built & Tested It
 
 1. **App code**: `calculator.py`  
    - Contains the calculator functions I implemented.  
@@ -23,9 +23,10 @@ This is a **simple practice project** I created to strengthen my **QA and DevOps
    From the project folder, I run:  
 
    ```bash
-   python -m pytest -v or simply:
+   python -m pytest -v 
+   
+   or simply:
 
-   ```bash
    pytest -v
 
 4. **Generating a test report**
@@ -35,10 +36,10 @@ This is a **simple practice project** I created to strengthen my **QA and DevOps
     python -m pytest -v --junitxml=report.xml
 
 
-## Failing test example
+### Failing Test Example
 - I intentionally added a failing test (test_failing_example) to see how pytest reports errors and how the workflow handles failures. This was a great learning experience on how CI/CD pipelines catch problems automatically.
 
-##  CI/CD Integration
+###  CI/CD Integration
 - I set up a GitHub Actions workflow in .github/workflows/python-tests.yml.
 - It runs automatically on push or pull request.
 - It also uploads the test report (report.xml) as an artifact for review.
