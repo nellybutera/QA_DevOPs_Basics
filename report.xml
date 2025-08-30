@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.111" timestamp="2025-08-30T18:31:42.349436+02:00" hostname="DESKTOP-MSOP4OK"><testcase classname="test_calculator" name="test_add" time="0.001" /><testcase classname="test_calculator" name="test_substract" time="0.001" /><testcase classname="test_calculator" name="test_failing_example" time="0.001"><failure message="assert 4 == 5&#10; +  where 4 = add(2, 2)">def test_failing_example():
+&gt;       assert add(2,2) == 5
+E       assert 4 == 5
+E        +  where 4 = add(2, 2)
+
+test_calculator.py:11: AssertionError</failure></testcase></testsuite></testsuites>
